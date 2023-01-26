@@ -178,6 +178,12 @@ Make sure httpd service is started
 
 `git push`
 
+#  Run the playbook against your uat inventory
+
+
+
+``
+
 
 
 ![last-build](./images12/lst-pull.PNG)
