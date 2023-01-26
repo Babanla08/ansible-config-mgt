@@ -112,7 +112,7 @@
 
 `cd /var/lib/jenkins/workspace/ansible-config-artifact/roles/webserver/tasks`
 
-`vi main.yml`
+`sudo vi main.yml`
 `---
 - name: install apache
   become: true
@@ -178,12 +178,14 @@ Make sure httpd service is started
 
 `git push`
 
+![last-pull](./images12/lst-pull.PNG)
+
 #  Run the playbook against your uat inventory
 
+`cd /var/lib/jenkins/workspace/ansible-config-artifact`
 
+`ansible-playbook -i inventory/uat.yml playbooks/site.yml`
 
-``
+![Ansible-playbook](./images12/ansible-playbook22.PNG)
 
-
-
-![last-build](./images12/lst-pull.PNG)
+![Website](./images12/ansible%20to%20playbooks.PNG)
